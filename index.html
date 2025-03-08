@@ -9,7 +9,9 @@ var text=window.location.search;
 	//var path= window.location.pathname.split('/')[1];
 	//alert(window.location.pathname);
 	var path= text.substring(1, text.lenght);
-	
+	var params = new URLSearchParams(text);
+	var q = (params.get("q"));
+	alert("Test query:"+q);
 	//window.location.replace(dm+path);
  // alert("te:"+path);
 	//window.location.href= dm+path;
