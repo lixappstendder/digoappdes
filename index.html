@@ -10,18 +10,17 @@ var text=window.location.search;
 	//alert(window.location.pathname);
 	var path= text.substring(1, text.lenght);
 	var params = new URLSearchParams(text);
-	var q = (params.get("q")) || (params.get("em")) ||(params.get("u"));
+	var q = (params.get("q")) || (params.get("em")) ||(params.get("u")) ||(params.get("id"))  ||(params.get("app"));
 	
 	//window.location.replace(dm+path);
  // alert("te:"+path);
 	//window.location.href= dm+path;
 
 	if(q){
-		alert("Test query:"+q);
+		//alert("Test query:"+q);
+		path= q;
 	}
-	else {
-alert('not have query');
-	}
+	
 dm.replace("appnow", path);
 }
 else {
